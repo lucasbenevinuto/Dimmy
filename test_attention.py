@@ -2,7 +2,6 @@ import numpy as np
 from numpy.testing import assert_array_almost_equal
 from attention import scaled_dot_product_attention
 
-
 Q = np.array([
     [1.0, 0.0, 1.0, 0.0],
     [0.0, 1.0, 0.0, 1.0],
@@ -60,7 +59,6 @@ def test_numerical_correctness(output, attention_weights):
         print("[PASSED] Valores numéricos conferem com cálculo manual")
     except AssertionError as e:
         print(f"[FAILED] Valores numéricos divergem: {e}")
-
 
 if __name__ == "__main__":
     print("=" * 50)
